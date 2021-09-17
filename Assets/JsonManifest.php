@@ -36,6 +36,6 @@ class JsonManifest implements ManifestInterface
     /** @inheritdoc */
     public function getUri($asset)
     {
-        return "{$this->dist}/{$this->get($asset)}";
+        return "{$this->dist}{$this->get($asset)}";
     }
 }
